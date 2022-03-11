@@ -1,5 +1,6 @@
 package com.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,14 +17,13 @@ public class GetOrderListTest {
     OrderClient orderClient;
 
     @Before
-    public void setUp()
-    {
+    public void setUp() {
         orderClient = new OrderClient();
     }
 
     @Test
-    public void getOrderList()
-    {
+    @DisplayName("Ger order List")
+    public void getOrderList() {
         ValidatableResponse getResponse = orderClient.getList();
         int statusCode = getResponse.extract().statusCode();
         ArrayList id = getResponse.extract().path("orders.id");

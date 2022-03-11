@@ -14,8 +14,7 @@ public class Order {
     private ArrayList<String> color;
 
     public Order(String firstName, String lastName, String address,
-                   String metroStation, String phone, int rentTime, String deliveryDate, String comment, ArrayList<String> color)
-    {
+                 String metroStation, String phone, int rentTime, String deliveryDate, String comment, ArrayList<String> color) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -29,8 +28,7 @@ public class Order {
     }
 
     public Order(String firstName, String lastName, String address,
-                 String metroStation, String phone, int rentTime, String deliveryDate, String comment)
-    {
+                 String metroStation, String phone, int rentTime, String deliveryDate, String comment) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;

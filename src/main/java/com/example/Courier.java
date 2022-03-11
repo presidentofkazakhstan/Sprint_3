@@ -5,15 +5,13 @@ public class Courier {
     private String password;
     private String firstName;
 
-    public Courier (String login, String password, String firstName)
-    {
+    public Courier(String login, String password, String firstName) {
         this.login = login;
         this.password = password;
         this.firstName = firstName;
     }
 
-    public Courier (String login, String firstName)
-    {
+    public Courier(String login, String firstName) {
         this.login = login;
         this.firstName = firstName;
     }
@@ -22,8 +20,7 @@ public class Courier {
         return login;
     }
 
-    public void setLogin(String login)
-    {
+    public void setLogin(String login) {
         this.login = login;
     }
 
@@ -31,8 +28,7 @@ public class Courier {
         return password;
     }
 
-    public void setPassword(String password)
-    {
+    public void setPassword(String password) {
         this.password = password;
     }
 
@@ -40,8 +36,7 @@ public class Courier {
         return firstName;
     }
 
-    public void setFirstName(String firstName)
-    {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 }
